@@ -25,9 +25,10 @@ import { useState } from "react";
 import { RiMenu2Line as MenuIcon } from "react-icons/ri";
 
 const navLinks = [
-  { text: "About", link: "/about" },
-  { text: "Services", link: "/services" },
-  { text: "Contact", link: "/contact" },
+  { text: "Todo App", link: "/user/todo" },
+  { text: "About", link: "#" },
+  { text: "Services", link: "#" },
+  { text: "Contact", link: "#" },
 ];
 
 const drawerWidth = 300;
