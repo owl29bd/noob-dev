@@ -1,8 +1,7 @@
 import { SidebarGroup } from "./index.routes";
-import {
-  RiPieChart2Line as AnalyticsIcon,
-  RiApps2Line as OverviewIcon,
-} from "react-icons/ri";
+import { RiApps2Line as OverviewIcon } from "react-icons/ri";
+import { ListTodo } from "lucide-react";
+import { IconType } from "react-icons";
 
 export const USER_SIDEBAR_ITEMS: SidebarGroup[] = [
   {
@@ -14,9 +13,9 @@ export const USER_SIDEBAR_ITEMS: SidebarGroup[] = [
         icon: OverviewIcon,
       },
       {
-        link: "/user/analytics",
-        text: "Analytics",
-        icon: AnalyticsIcon,
+        link: "/user/todo",
+        text: "ToDo List",
+        icon: ListTodo as unknown as IconType,
       },
     ],
   },
