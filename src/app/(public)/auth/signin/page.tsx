@@ -20,7 +20,7 @@ export default function SignInPage() {
           <SignInForm />
           <div className="mt-6">
             <AlternativeAuthDivider />
-            <div className="mt-6 grid grid-cols-3 gap-3">
+            <div className="mt-6 flex gap-3 w-full mx-auto justify-center items-center">
               <SignInWithTwitter />
               <SignInWithGithub />
               <SignInWithFacebook />
