@@ -32,6 +32,7 @@ export const authOptions: NextAuthOptions = {
         const { email, password } = credentials;
 
         try {
+          console.log("credentialsProvider", credentials);
           const res = await authService.signin({ email, password });
 
           return { ...res.user, ...res };

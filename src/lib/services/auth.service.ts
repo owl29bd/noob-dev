@@ -12,6 +12,7 @@ import { APIUrl } from "@/lib/constants/url.config";
 
 class AuthService {
   async signin(data: SigninReq) {
+    console.log("Auth Service Signin", data);
     const res = await httpClient.post<SigninRes>(APIUrl.auth.signin(), data);
 
     return res.data;

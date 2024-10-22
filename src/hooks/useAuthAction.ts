@@ -10,12 +10,18 @@ export default function useAuthAction() {
 
   const signinMutation = useMutation({
     mutationFn: async (data: SigninReq) => {
+      console.log("SignInMutation-> data: ", data);
+      // return;
       const res = await signIn("credentials", {
         redirect: false,
         callbackUrl: "/",
         email: data.email,
         password: data.password,
       });
+
+      console.log("res", res);
+
+      // return;
 
       if (!res?.ok) {
         throw new Error("Invalid credentials.");
